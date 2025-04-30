@@ -1,6 +1,6 @@
 # TickClock
-## A high resolution clock library written in C.
-## Currently only supports Windows platform.
+**A high resolution clock library written in C.**
+**Currently only supports Windows platform.**
 
 ## How to use TickClock:
 Include the proper `TickClock.lib` library file in your projects dependencies.
