@@ -41,7 +41,7 @@ void ITickClockStop(TickClock_t* clock) {
 }
 
 float ITickClockElapsed(TickClock_t* clock) {
-	if (!clock) return 0xFFFFFFFFFFFFFFFF;
+	if (!clock) return 0.0f;
 	return clock->elapsed; 
 } 
 
@@ -51,6 +51,6 @@ float ITickClockDelta(TickClock_t* clock) {
 } 
 
 long long ITickClockFps(TickClock_t* clock) { 
-	if (!clock) return 0.0f;
+	if (!clock) return 0xFFFFFFFFFFFFFFFF;
 	return clock->clock; 
 }
