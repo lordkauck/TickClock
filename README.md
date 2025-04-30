@@ -1,5 +1,6 @@
 # TickClock
 **A high resolution clock library written in C.**
+
 **Currently only supports Windows platform.**
 
 ## How to use TickClock:
