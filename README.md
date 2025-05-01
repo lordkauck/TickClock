@@ -34,9 +34,9 @@ int main(int argc, char* argv[]) {
 ```
 
 
-## <u>Build from source</u>:
+## Build from source:
 
-<u>**Windows (Visual Studio)**</u>:
+**Windows (Visual Studio)**:
 
 Download the source code, open up the viusal studio solution file and build it from there.
 
