@@ -1,6 +1,8 @@
 #ifndef PROJECTBASE_H
 #define PROJECTBASE_H
 
+// @AUTHOR: Lordkauck
+
 #pragma push_macro("PROJECT_CONFIG")
 #define PROJECT_CONFIG 1
 #if defined(PROJECT_CONFIG)

@@ -1,5 +1,8 @@
 #ifndef PRIMATIVES_H
 #define PRIMATIVES_H
+
+// @AUTHOR: Lordkauck
+
 typedef char					 int8;
 typedef short					 int16;
 typedef long					 int32;

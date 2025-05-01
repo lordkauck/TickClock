@@ -1,6 +1,8 @@
 #ifndef PROJECTAPI_H
 #define PROJECTAPI_H
 
+// @AUTHOR: Lordkauck
+
 #if defined(PROJECT_CONFIG)
 	#pragma push_macro("PROJECT_ENABLE_MACROS")
 	#define PROJECT_ENABLE_MACROS 1
@@ -28,6 +30,28 @@
 			#endif // defined(PLATFORM_WIN)
 		#endif // defined(PROJECT_FIND_ARCH)
 		#pragma pop_macro("PROJECT_FIND_ARCH")
+
+		#pragma push_macro("PROJECT_APIS")
+		#define PROJECT_APIS 1
+		#if defined(PROJECT_APIS)
+			#if defined(__cplusplus)
+				#define PROJ_APICALL __stdcall
+			#else
+				#define PROJ_APICALL __cdecl
+			#endif
+		
+			#define PROJ_CDECL __cdecl 
+			#define PROJ_THISCALL __thiscall
+			#define PROJ_FASTCALL __fastcall  
+			#define PROJ_VECCALL __vectorcall 
+		#else
+			#define PROJ_APICALL
+			#define PROJ_CDECL
+			#define PROJ_THISCALL 
+			#define PROJ_FASTCALL 
+			#define PROJ_VECCALL 
+		#endif
+		#pragma pop_macro("PROJECT_APIS")
 
 		#if defined(PLATFORM_WIN)
 			#define PROJ_APICALL __stdcall
