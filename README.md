@@ -33,6 +33,21 @@ int main(int argc, char* argv[]) {
 }
 ```
 
+Example code for a simple class wrapper for TickClock:
+```cpp
+class CTickClock {
+public:
+  CTickClock(void) { TickClockInit(); }
+  ~CTickClock() { TickClockShutdown(); }
+
+  void reset(void) { TickClockReset(); }
+  void start(void) { TickClockStart(); }
+  void stop(void) { TickClockStop(); }
+  float elapsed(void) { return TickClockElapsed(); }
+  float delta(void) { return TickClockDelta(); }
+  long long fps(void) { return TickClockFps(); }
+};
+```
 
 ## Build from source:
 
