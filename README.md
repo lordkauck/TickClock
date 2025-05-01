@@ -5,6 +5,7 @@
 - Does not use exceptions
 - Does not depend on other libraries outside of native libraries
 - Does not require CRT
+- Easy to implement into a class wrapper
 
 **Currently only supports Windows platform.**
   
