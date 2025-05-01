@@ -1,20 +1,20 @@
-# TickClock Overview
+# __TickClock Overview__
 **A high resolution clock library written in C.**
 
-## Technical information:
+## __Technical information__:
 - Does not use exceptions
 - Does not depend on other libraries outside of native libraries
 - Does not require CRT
 - Easy to implement into a class wrapper
 
-**Currently only supports Windows platform.**
+__**Currently only supports Windows platform.**__
   
-## How to use TickClock:
+## __How to use TickClock__:
 Include the proper `TickClock.lib` library file in your projects dependencies.
 If you are making an x86 build, include the library from the `x86` directory, likewise, include the library from the `x64` directory if you are making an x64 build.
 Then include the `TickClock.h` header file in your project. 
 
-### Example code below:
+### __Example code below__:
 ```cpp
 #include <stdio.h>
 #include "TickClock.h"
@@ -34,6 +34,8 @@ int main(int argc, char* argv[]) {
 ```
 
 
-## To build from source:
+## __To build from source__:
+
+__**Windows (Visual Studio)**__
 Download the source code, open up the viusal studio solution file and build it from there.
 
