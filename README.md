@@ -36,6 +36,7 @@ int main(int argc, char* argv[]) {
 
 ## __To build from source__:
 
-__**Windows (Visual Studio)**__
+__**Windows (Visual Studio)**__:
+
 Download the source code, open up the viusal studio solution file and build it from there.
 
